@@ -1,0 +1,41 @@
+#cubo{
+    background: #000000;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    align-items: center;
+    font-size: 12px;
+}
+#cuboRandom{
+    background: #000000;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    align-items: center;
+    font-size: 12px;
+}
+#RGBred{
+    -webkit-appearance: none ;
+    background: rgb(207, 0, 0);
+    height: 5px;
+    border-radius:  10px;
+    box-shadow: #000000;
+    width: 100px;
+}
+#RGBgreen{ 
+    -webkit-appearance: none ;
+    background: rgb(17, 207, 0);
+    height: 5px;
+    border-radius:  10px;
+    box-shadow: #000000;
+    width: 100px;
+}
+#RGBblue{
+    -webkit-appearance: none ;
+    background: rgb(0, 3, 207);
+    height: 5px;
+    border-radius:  10px;
+    box-shadow: #000000;
+    width: 100px;
+}
+
