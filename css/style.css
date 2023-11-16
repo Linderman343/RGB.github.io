@@ -1,41 +1,65 @@
-#cubo{
-    background: #000000;
+*{
+    margin: 0;
+}
+header{
+    width: 100%;
+    background: #adfff4;
+    height: 100px;
+    text-align: center;
+
+}
+h1{
+    display: inline;
+    margin: 0;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    background: linear-gradient(90deg, #ff0000, #ffa500, #00FF00, #0000FF,#4B0082, #9400D3);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    
+}
+#RGB{
+    display: grid;
+    grid-template-columns: 1fr 1fr  ;
+    width: 20%;
+    margin: auto;
+    margin-top:10px;
+
+}
+label{
+
+}
+.range{
+    position: relative;
+    height: 10px;
+    width: 100px;
+    margin-right: 30px;
+}
+#cuboContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    width: 500px;
+    
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cubos{
     width: 200px;
     height: 200px;
     text-align: center;
     align-items: center;
     font-size: 12px;
+    margin: auto;
+}
+#cubo{
+    background: rgb(125, 125, 125);
+
 }
 #cuboRandom{
     background: #000000;
-    width: 200px;
-    height: 200px;
-    text-align: center;
-    align-items: center;
-    font-size: 12px;
 }
-#RGBred{
-    -webkit-appearance: none ;
-    background: rgb(207, 0, 0);
-    height: 5px;
-    border-radius:  10px;
-    box-shadow: #000000;
-    width: 100px;
-}
-#RGBgreen{ 
-    -webkit-appearance: none ;
-    background: rgb(17, 207, 0);
-    height: 5px;
-    border-radius:  10px;
-    box-shadow: #000000;
-    width: 100px;
-}
-#RGBblue{
-    -webkit-appearance: none ;
-    background: rgb(0, 3, 207);
-    height: 5px;
-    border-radius:  10px;
-    box-shadow: #000000;
-    width: 100px;
-}
+
+
 

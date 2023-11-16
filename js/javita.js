@@ -1,22 +1,22 @@
 window.addEventListener('load', function(){
-    let RGBred = document.querySelector('#RGBred')
-    let RGBblue = document.querySelector('#RGBblue')
-    let RGBgreen = document.querySelector('#RGBgreen')
+    let Red = document.querySelector('#Red')
+    let Blue = document.querySelector('#Blue')
+    let Green = document.querySelector('#Green')
 
     random()
  
-    RGBred.addEventListener('input',function() {
+    Red.addEventListener('input',function() {
         refresh()
     })
-    RGBblue.addEventListener('input',function() {
+    Blue.addEventListener('input',function() {
         refresh()
     })
-    RGBgreen.addEventListener('input',function() {
+    Green.addEventListener('input',function() {
         refresh()
     })
 
     function refresh() {
-        let RGBdef = `rgb(${RGBred.value},${RGBgreen.value},${RGBblue.value})`
+        let RGBdef = `RGB(${Red.value},${Green.value},${Blue.value})`
         let caja = document.querySelector('#cubo');
         caja.style.background = RGBdef;
         console.log(RGBdef)
@@ -29,7 +29,7 @@ window.addEventListener('load', function(){
         let RandomRed = Math.floor(Math.random()* (256 - 0) + 0);
         let RandomGreen = Math.floor(Math.random()* (256 - 0) + 0);
 
-        let RandomDef = `rgb(${RandomRed},${RandomGreen},${RandomBlue})`
+        let RandomDef = `RGB(${RandomRed},${RandomGreen},${RandomBlue})`
         document.querySelector('#rgbDef').innerHTML = RandomDef;
         let cajaDef = document.querySelector('#cuboRandom'); 
         cajaDef.style.background = RandomDef;

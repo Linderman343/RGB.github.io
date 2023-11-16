@@ -8,18 +8,29 @@
     <script src="./js/javita.js"></script>
 </head>
 <body>
+    <header>
+        <h1>Paleta de colores juegos</h1>
+    </header>
+
+
     <div id="RGB"> 
-        <label for="RGBred">Rojo:</label>
-            <input type="range" min="0" max="255" id="RGBred" value="0">
+        <label for="Red">Rojo:</label>
+            <input type="range" min="0" max="255" id="Red" value="125" class="range">
 
-        <label for="RGBgreen">Verde:</label>
-            <input type="range" min="0" max="255" id="RGBgreen" value="0">
+        <label for="Green">Verde:</label>
+            <input type="range" min="0" max="255" id="Green" value="125" class="range">
 
-        <label for="RGBblue">Azul:</label>
-            <input type="range" min="0" max="255" id="RGBblue" value="0">
+        <label for="Blue">Azul:</label>
+            <input type="range" min="0" max="255" id="Blue" value="125" class="range">
     </div>
-    
-    <div id="cubo"><h1 id="rgbRan">RGB(000,000,000)</h1></div>
-    <div id="cuboRandom"><h1 id="rgbDef">RGB(000,000,000)</h1></div>
+
+    <div id="cuboContainer">
+        <div id="cubo" class="cubos">
+            <h2 id="rgbRan">RGB(125,125,125)</h2>
+        </div>
+        <div id="cuboRandom" class="cubos">
+            <h2 id="rgbDef"></h2>
+        </div>
+    </div>
 </body>
 </html>
