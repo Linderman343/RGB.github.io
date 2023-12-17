@@ -8,29 +8,46 @@
     <script src="./js/javita.js"></script>
 </head>
 <body>
-    <header>
-        <h1>Paleta de colores juegos</h1>
-    </header>
+        <h1>GAME COLOR</h1>
+    <div id="conteiner">
 
+        
+    
+            <div id="cubo" class="cubos">
+            </div>
 
-    <div id="RGB"> 
-        <label for="Red">Rojo:</label>
-            <input type="range" min="0" max="255" id="Red" value="125" class="range">
-
-        <label for="Green">Verde:</label>
-            <input type="range" min="0" max="255" id="Green" value="125" class="range">
-
-        <label for="Blue">Azul:</label>
-            <input type="range" min="0" max="255" id="Blue" value="125" class="range">
-    </div>
-
-    <div id="cuboContainer">
-        <div id="cubo" class="cubos">
-            <h2 id="rgbRan">RGB(125,125,125)</h2>
+        <div id="RGB"> 
+            <label for="Red" id="red">Rojo:</label> 
+                <input type="range" min="0" max="255" id="Red" value="125" class="range">
+        
+            <label for="Green">Verde:</label>
+                <input type="range" min="0" max="255" id="Green" value="125" class="range">
+            <label for="Blue">Azul:</label>
+                <input type="range" min="0" max="255" id="Blue" value="125" class="range">
         </div>
-        <div id="cuboRandom" class="cubos">
-            <h2 id="rgbDef"></h2>
+        
+            <div id="cuboRandom" class="cubos">
+            </div>
         </div>
-    </div>
+        <div id="btnPizarra" class="show">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </div>
+        <div class="pizarra show">
+            <h2>Puntuación</h2>
+            <div id="resultados">
+                <span>Copia</span><span>Original</span><span>%</span>
+            </div>
+        </div>
+        <div id="down">
+            <span></span>
+            <div id="conteinerBtn">
+                <button id="comparar">Comparar</button>
+                <button id="Newcolor">Cambiar color</button>
+            </div>
+            <span></span>
+        </div>
 </body>
 </html>
